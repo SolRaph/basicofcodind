@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
+}
+#hamburger, #hamburger-logo{
+    display: none;
+}
+.logobasic{
+   display: flex;
+   justify-content: center; 
+}
+.bandeaunoir{
+    background-color: black;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 1rem 0rem 1rem 0;
+    align-items: center;
+}
+.bandeaunoir a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+
+a:hover{
+    color:red
+} 
+.Accueil{
+    display: flex;
+    padding: 3rem 0 0 20rem; 
+    align-items:center;   
+}
+#logohome{
+    padding-right: 1rem;
+}
+.Accueil p{
+    font-weight:bold;
+    font-size: x-large;
+}
+.texte{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem 0 0 3rem;
+    align-items: center;
+}
+.texte img{
+    border-radius: 15%;
+}
+.texte p{
+    font-size: large;
+}
+.bandeautexte{
+    background-color: rgb(87, 56, 152, 0.3);;
+    margin: 3rem 5rem;
+}
+.bandeautexte p{
+    text-align: end;
+    padding-right: 15rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    font-size: large;
+}
+.bandeaufin{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bandeaufin a{
+    color: white;
+    text-decoration: none;
+    margin-left: -7rem;  
+}
+.logobasic2{
+    margin-left:-20rem;
+    margin-right: -15rem;
+}
+
+#reserver{
+    text-align: center;
+    color: white;
+}
+footer{
+    background-color: black;
+}
+.textehtml{
+   margin: 4em 0 2rem 5rem; 
+}
+.texte2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.texte2 p{
+    background-color: rgb(87, 56, 152, 0.3);
+    padding: 2rem 8rem 2rem 2rem;
+}
+span{
+    margin-left: 1rem;
+}
+#learnmore{
+    margin: 0 3rem 2rem 9rem;
+    color: blueviolet;
+    
+}
+.lien{
+    margin: 0 5rem 1rem 10rem;
+    align-items:center;  
+}
+.fleche{
+    margin-right: 1rem;
+}
+a{
+    text-decoration:none;
+    display: flex;
+    align-items: center;
+    color: black; 
+}
+.espace2{
+    margin-left: 2rem;
+}
+.texte3{
+    display: flex;
+    justify-content: space-evenly;
+}
+.texte3 p{
+    background-color: rgb(87, 56, 152, 0.3);
+    padding: 1rem 30rem 1rem 1rem;   
+    margin: 5rem;
+}
+.texte3 img{
+    padding-right: -30rem;
+}
+
+#outils{
+    margin: 4rem 0 3rem 10rem;
+}
+
+@media (max-width: 900px) { 
+.bandeaufin, .texte, .texte2, .texte3, .Accueil{
+        flex-direction:column;  
+    }
+    .Accueil{ 
+        margin: auto;
+        padding: 1rem 0 0 0; 
+    }
+    * {
+        /* Pour que les tailles soient correctes */
+        box-sizing: border-box;
+      }
+      
+      body {
+        /* Pour coller le menu au bord, sans espace */
+        margin: 0;
+      }
+      
+      .menu {
+        /* Pour que le menu reste en place quand on scroll */
+        position: fixed;
+        /* Pour que le menu ne soit pas sur le texte et que ce dernier puisse être sélectionné */
+        width: 0px;
+      }
+      
+      main {
+        /* Pour que le texte ne soit pas sous le menu */
+        margin-left: 50px;
+        width: 500px;
+        text-align: justify;
+      }
+      
+      #hamburger {
+        /* Pour que la checkbox ne s'affiche pas */
+        display: none;
+      }
+      
+      #hamburger-logo {
+        /* Pour que le curseur soit un pointeur */
+        cursor: pointer;
+        background: rgb(0, 2, 0);
+        width: 200px;
+        display: block;
+        color: white;
+        /* Pour que le menu hamburger s'affiche toujours */
+        text-align: right;
+        /* Pour que le menu hamburger soit "rangé" par défaut */
+        transform: translateX(-168px);
+        padding: 10px;
+      }
+      
+      nav {
+        display: flex;
+        flex-direction: column;
+        background: rgb(0, 0, 0);
+        overflow: hidden;
+        width: 200px;
+        /* Pour que les liens soient "rangés" par défaut */
+        transform: translateX(-200px);
+      }
+      
+      #hamburger-logo,
+      nav {
+        /* Pour qu'il y ait une animation */
+        transition: 0.7s;
+      }
+      
+      /* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+      #hamburger:checked ~ #hamburger-logo,
+      #hamburger:checked ~ nav {
+        /* Changement de la position pour afficher les menus */
+        transform: translate(0);
+      }
+      
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+      }
+      
+      nav a:hover {
+        background: #444;
+      }   
+}
+   
+
+
+
+
+    
+
+
